@@ -1,0 +1,3 @@
+# serverless-plugin-autoinstaller
+
+Example
