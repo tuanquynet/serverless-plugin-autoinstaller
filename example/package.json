@@ -1,0 +1,17 @@
+{
+  "name": "serverless-plugin-autoinstaller-example",
+  "version": "1.0.0",
+  "description": "autoinstaller-example",
+  "main": "index.js",
+  "scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"deploy-lambda": "sls deploy",
+		"remove-lambda": "sls remove"
+  },
+  "author": "Quy Tran",
+  "license": "ISC",
+  "engines" : { "node" : ">=8.9.0" },
+  "dependencies": {
+		"serverless-plugin-autoinstaller": "^1.0.0"
+  }
+}

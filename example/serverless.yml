@@ -1,0 +1,31 @@
+service: aws-sample # project name
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: ${opt:stage, 'dev'}
+  region: ${env:AWS_REGION, 'eu-central-1'}
+  versionFunctions: false
+  memorySize: 128 #default to minimum, overwrite in functions, if necessary
+#  deploymentBucket:
+#      name: com.serverless.${self:service}.${self:provider.region}.deployments
+  profile: ${env:AWS_PROFILE, 'default-aws-profile'}
+
+
+package:
+  individually: true
+  exclude:
+    - "**/*"
+
+plugins:
+  - serverless-plugin-autoinstaller
+
+functions:
+  hello:
+    handler: hello/index.handler
+    timeout: 10
+    package:
+      include:
+        - hello/**
+    environment:
+      NODE_ENV: ${env:NODE_ENV, 'development'}
