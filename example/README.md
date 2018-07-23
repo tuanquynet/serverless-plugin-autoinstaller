@@ -3,7 +3,7 @@ If you can not install serverless-plugin-autoinstaller package from npm, we can 
 - go to root folder, then run `npm link`
 - go to example folder, then run `npm link serverless-plugin-autoinstaller`
 
-If we want to unlink, we simply remove serverless-plugin-autoinstaller symlink in the example/node_module.
+If we want to unlink, we simply run `npm unlink serverless-plugin-autoinstaller`.
 
 ## Setup
 - Install serverless. Please read this doc https://serverless.com/framework/docs/providers/aws/guide/installation/

@@ -2,11 +2,15 @@
   "name": "serverless-plugin-autoinstaller",
   "version": "1.0.0",
   "description": "autoinstall",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tuanquynet/serverless-plugin-autoinstaller.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Quy Tran",
+  "author": "Quy Tran (tuanquynet@gmail.com)",
   "license": "ISC",
   "engines": {
     "node": ">=8.9.0"
